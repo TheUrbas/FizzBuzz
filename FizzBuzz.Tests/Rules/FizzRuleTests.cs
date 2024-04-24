@@ -29,12 +29,12 @@ public class FizzRuleTests
     [InlineData(1)]
     [InlineData(-1)]
     [InlineData(3)]
-    public void applyTransformation_GivenAnyNumber_ReturnsFuzz(int number)
+    public void applyTransformation_GivenAnyNumber_ReturnsFizz(int number)
     {
         var fizzRule = new FizzRule();
 
         var result = fizzRule.applyTransformation(number);
         
-        Assert.Equal("Fuzz", result);
+        Assert.Equal("Fizz", result);
     }
 }

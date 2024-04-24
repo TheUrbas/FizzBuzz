@@ -9,6 +9,6 @@ public class FizzRule : IRule
 
     public string applyTransformation(int number)
     {
-        return "Fuzz";
+        return "Fizz";
     }
 }

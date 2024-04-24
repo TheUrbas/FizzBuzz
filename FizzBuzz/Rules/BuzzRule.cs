@@ -1,6 +1,6 @@
 namespace FizzBuzz.Rules;
 
-public class BuzzRule
+public class BuzzRule : IRule
 {
     public bool isRuleValid(int number)
     {

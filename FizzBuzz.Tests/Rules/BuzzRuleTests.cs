@@ -1,3 +1,5 @@
+using FizzBuzz.Rules;
+
 namespace FizzBuzz.Tests.Rules;
 
 public class BuzzRuleTests

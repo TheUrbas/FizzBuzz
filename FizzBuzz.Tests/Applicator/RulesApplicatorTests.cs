@@ -15,10 +15,11 @@ public class RulesApplicatorTests
         
         var applicator = new RulesApplicator(new List<IRule> { mockRule.Object });
         var inputList = new List<int> { 1, 2, 3 };
+        var expectedOutputList = inputList.Select(item => item.ToString());
 
-        var result = applicator.ApplyRulesAndReturnLists(inputList);
+        var result = applicator.ApplyRulesAndReturnList(inputList);
         
-        Assert.Equal(inputList, result);
+        Assert.Equal(expectedOutputList, result);
     }
     
     [Fact]
@@ -32,7 +33,7 @@ public class RulesApplicatorTests
         var inputList = new List<int> { 1, 2, 3 };
         var expectedOutputList = new List<string> { "test", "test", "test" };
 
-        var result = applicator.ApplyRulesAndReturnLists(inputList);
+        var result = applicator.ApplyRulesAndReturnList(inputList);
         
         Assert.Equal(expectedOutputList, result);
     }
